@@ -1,26 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  /* width: 100vh; */
+  margin: 0 auto;
+  /* max-width: 200rem; */
+}
+
 button {
   outline: none;
   border: 0;
   cursor: pointer;
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: #F47C7C;
+  justify-content: space-around;
+  color: whitesmoke;
+}
+
+.nav-icon {
+  font-size: 2.5rem;
+}
+
+.total-count {
+  display: inline-block;
+  text-align: center;
+  font-size: 2rem;
+  width: 2.5rem;
+  background-color: #9ba3eb;
+  color: whitesmoke;
+  border-radius: 50%;
+}
+
+.input {
+  display: flex;
+  justify-content:space-between;
+  padding: 1rem 0.5rem;
+}
+
+.habit-input {
+  font-size: 2.5rem;
+}
+
+.add-btn {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border-radius:10px;
+  background-color: #9ba3eb;
+  color: whitesmoke;
+}
+
+ul {
+  padding: 0;
+}
+
 .habit {
   font-size: 2.5rem;
-  padding: 0.5rem;
+  padding: 0.5rem 2rem;
   list-style: none;
+  background-color: #FFF2F2;
+  margin-bottom:1.5rem;
+  border-radius: 20px;
+
 }
 
 .habit-count {
   display: inline-block;
   text-align: center;
-  font-size:2rem;
+  font-size: 2rem;
   width: 2.5rem;
-  line-height:2.5rem;
-  margin-left: 0.2rem;
-  margin-right: 0.5rem;
-  background-color: #F4BFBF;
+  line-height: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 4rem;
+  background-color: #f4bfbf;
   color: whitesmoke;
-  border-radius:50%;
+  border-radius: 50%;
 }
 
 .habit-button {
@@ -30,7 +87,7 @@ button {
 }
 
 .habit-button:hover {
-  opacity: 0.8;
+  opacity: 0.5;
 }
 
 .habit-increase,
@@ -41,4 +98,17 @@ button {
 .habit-delete {
   font-size: 2rem;
   color: #92b4ec;
+}
+
+.reset-btn {
+  padding: 1rem;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  background-color: #92B4EC;
+  color: whitesmoke;
+  border-radius: 20px;
+}
+
+.reset-btn:hover {
+  opacity: 0.8;
 }
