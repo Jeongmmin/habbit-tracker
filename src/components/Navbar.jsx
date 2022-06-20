@@ -1,8 +1,9 @@
-import React, { Component } from "react";
+import React, { PureComponent } from "react";
 // import "./app.css";
 
-class Navbar extends Component {
+class Navbar extends PureComponent {
   render() {
+    console.log('navbar');
     return (
       <nav className='navbar'>
         <i class='fas fa-chevron-circle-down nav-icon'></i>
