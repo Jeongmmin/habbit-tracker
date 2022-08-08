@@ -1,7 +1,6 @@
-import React, { PureComponent } from "react";
+import React, { PureComponent } from 'react';
 
 class HabitAddForm extends PureComponent {
-  
   inputRef = React.createRef();
 
   onSubmit = (e) => {
@@ -9,7 +8,7 @@ class HabitAddForm extends PureComponent {
     const habitName = this.inputRef.current.value;
     console.log(this.inputRef.current.value);
     habitName && this.props.onAdd(habitName);
-    this.inputRef.current.value= ''
+    this.inputRef.current.value = '';
   };
   render() {
     console.log('habbitAddForm');
@@ -33,4 +32,4 @@ class HabitAddForm extends PureComponent {
   }
 }
 
-export default  HabitAddForm;
+export default HabitAddForm;
