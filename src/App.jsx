@@ -35,7 +35,6 @@ class App extends Component {
   };
 
   handleDecrement = (habit) => {
-    // console.log(`handleDecrement ${habit.name}`);
     const habits = this.state.habits.map((item) => {
       if (item.id === habit.id) {
         const count = habit.count - 1;
@@ -47,13 +46,11 @@ class App extends Component {
   };
 
   handleDelete = (habit) => {
-    // console.log(`handleDelete ${habit.name}`);
     const habits = this.state.habits.filter((item) => item.id !== habit.id);
     this.setState({ habits });
   };
 
   handleResetAll = () => {
-    // window.location.reload();
     const habits = this.state.habits.map((habit) => {
       if (habit.count !== 0) {
         return { ...habit, count: 0 };
@@ -68,8 +65,6 @@ class App extends Component {
     const totalCount = this.state.habits.filter(
       (item) => item.count !== 0
     ).length;
-    // console.log(this.state.habits.filter((item) => item.count !== 0).length);
-    // console.log(this.state.habits);
 
     return (
       <>
